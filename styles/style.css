@@ -63,11 +63,11 @@ header nav {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    background-color: #000000;
+    background-color: white;
 }
 
 .header_hover a:hover::after{
     transform: scaleX(1);
-    background-color: #000000;
+    background-color: white;
     transition: 0.2s ease-in;
 }
