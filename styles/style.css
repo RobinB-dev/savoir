@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 body {
-    /* background-color: black; */
+    /* background-color: #FFFFFF; */
     font-family: 'Fugaz One', cursive;
     margin: 0;
-    height: 200vh;
 }
 
 header {
@@ -63,11 +62,11 @@ header nav {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    background-color: #000000;
+    background-color: white;
 }
 
 .header_hover a:hover::after{
     transform: scaleX(1);
-    background-color: #000000;
+    background-color: white;
     transition: 0.2s ease-in;
 }
