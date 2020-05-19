@@ -53,6 +53,7 @@
 {
     display: flex;
     justify-content: space-between;
+    user-select: none;
 }
 
 .imgInfo
@@ -66,6 +67,7 @@
 {
     height: 150px;
     font-family: 'PT Sans Narrow', sans-serif;
+    user-select: none;
 }
 
 .footerInfo
