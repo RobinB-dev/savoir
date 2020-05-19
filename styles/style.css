@@ -295,10 +295,22 @@ ARTICLE
     margin: 0px 100px;
 }
 
-
-
 .logoContainer .icon{
     margin-right: 12px;
+    width: 30px;
+}
+
+.footerContainer .whoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+}
+
+.footerContainer .whoContainer2{
+    height: 100px;
+    width: 170px;
 }
 
 .footerContainer .who{
@@ -316,16 +328,19 @@ ARTICLE
 }
 
 .footerContainer .copyright{
-    width: 300px;
-    /* display: flex; */
+    /* width: 300px; */
+    width: 33%;
+    height: 100%;
+    display: flex;
     justify-content: center;
 }
 
 .copyright .savoirLogo{
     display: flex;
+    /* align-items: baseline; */
     justify-content: center;
+    height: 80%;
     padding-bottom: 30px;
-    /* width: 250px; */
 }
 
 .copyright .savoirLogo img{
@@ -333,22 +348,35 @@ ARTICLE
 }
 
 .copyright .savoirCopyright{
+    height: 20%;
     text-align: center;
 }
 
 .copyright .savoirCopyright .reserve{
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     width: 100%;
+    font-size: 16px;
+
 }
 
 .copyright .savoirCopyright .p2024{
     width: 100%;
+    font-size: 16px;
 }
 
 
+.footerContainer .linkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 33%;
+}
+
 .footerContainer .link{
     text-align: right;
-    height: 97px;
+    height: 100px;
+    width: 100%;
 }
 
 .footerContainer .linkFooter{
@@ -791,6 +819,12 @@ QUI SOMMES NOUS ?
     .transform2{
         transform: translateY(400px)
     }
+    .footer .footerContainer{
+        margin: 0px 0px;
+    }
+    .footerContainer .whoContainer{
+        justify-content: left;
+    }
 }
 
 @media (max-width: 800px) {
@@ -806,11 +840,56 @@ QUI SOMMES NOUS ?
     .headerTitleContainer{
         font-size: 16px;
     }
+    .gorie h2{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        padding-top: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 40px;
+    }
     .case3{
         width: 100%;
     }
     .transform2{
         transform: translateY(50px)
+    }
+    .footerContainer .who{
+        font-size: 16px;
+    }
+    .footerContainer .linkFooter{
+        font-size: 16px;
+    }
+    .logoContainer .icon{
+        margin-right: 6px;
+        width: 20px;
+    }
+    .footerContainer .who{
+        padding-bottom: 10px;
+    }
+    .copyright .savoirCopyright .reserve{
+        font-size: 12px;
+    
+    }
+    .copyright .savoirCopyright .p2024{
+        font-size: 12px;
+    }
+    .footerContainer .whoContainer{
+        align-items: flex-end;
+        justify-content: left;
+    }
+    .footerContainer .linkContainer{
+        align-items: flex-end;
+    }
+    .copyright .savoirLogo{
+        align-items: baseline;
+        height: 60%;
+        padding-top: 25px;
+    }
+    .copyright .savoirLogo img{
+        width: 350px;
     }
 }
 
