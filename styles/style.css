@@ -19,7 +19,7 @@ body::after {
     bottom: 0;
     left: 0;
     background-color: #ffffff;
-  }
+}
 
 header {
     user-select: none;
@@ -58,7 +58,7 @@ header nav {
 .contact {
     top: 1%;
     left: 50%;
-    transform: translateX(180%);
+    transform: translateX(130%);
     z-index: 150;
     mix-blend-mode: difference;
 }
@@ -89,8 +89,8 @@ header nav {
 
 .mouse_invert {
     z-index: 200;
-    top: -100px;
-    left: -100px;
+    top: 0px;
+    left: 0px;
     pointer-events: none;
     position: fixed;
     display: block;
@@ -99,20 +99,27 @@ header nav {
     background-color: white;
     mix-blend-mode: difference;
     border-radius: 50%;
+    transition: all 0.1s linear;
 }
 
-/* .mouse_invert::after {
-    content: '';
+.mouse_invert_cursor {
+    z-index: 200;
     display: block;
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    position: fixed;
+    width: 5px;
+    height: 5px;
     background-color: white;
     mix-blend-mode: difference;
+    pointer-events: none;
     border-radius: 50%;
-    top: 80%;
-    left: 80%;
-} */
+    top: 0;
+    left: 0;
+}
+
+.click {
+    width: 30px;
+    height: 30px;
+}
 
 
 /*************
@@ -131,6 +138,27 @@ ARTICLE
 {
     width: calc(100% - 200px);
     margin: 0 auto;
+}
+
+.caseArticle{
+    width: 28%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.titleCaseArticle{
+    position: absolute;
+    bottom: -10px;
+}
+
+.titleCaseArticle h3{
+    color: #ffffff;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Fugaz One', cursive;
 }
 
 .articleinfo
@@ -272,7 +300,6 @@ ARTICLE
 QUI SOMMES NOUS ?
 
 **************/
-
 
 .presLeft
 {
