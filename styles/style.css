@@ -286,6 +286,7 @@ ARTICLE
 
 
 .footerContainer .link{
+    text-align: right;
     height: 97px;
 }
 
@@ -481,6 +482,7 @@ QUI SOMMES NOUS ?
 
 .case1{
     width: 49%;
+    min-width: 300px;
     height: 600px;
     position: relative;
     padding-bottom: 50px;
@@ -599,6 +601,7 @@ QUI SOMMES NOUS ?
 
 .case3{
     width: 32%;
+    min-width: 250px;
     height: 600px;
     position: relative;
     padding-bottom: 50px;
@@ -641,9 +644,14 @@ QUI SOMMES NOUS ?
     margin-top: 160px;
 }
 
+.wrapContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .case4{
     width: 49%;
+    min-width: 300px;
     height: 200px;
     position: relative;
     padding-bottom: 20px;
@@ -692,3 +700,32 @@ QUI SOMMES NOUS ?
 }
 
 /* END INDEX ROBIN */
+
+
+
+@media (max-width: 950px) {
+    .case1{
+        width: 100%;
+    }
+    .case3{
+        width: 49%;
+    }
+    .transform2{
+        transform: translateY(400px)
+    }
+}
+
+@media (max-width: 800px) {
+    .case4{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .case3{
+        width: 100%;
+    }
+    .transform2{
+        transform: translateY(50px)
+    }
+}
