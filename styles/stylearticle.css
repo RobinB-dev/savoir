@@ -31,7 +31,9 @@
 
 .articletext
 {
+    display: block;
     width: 800px;
+    height: 750px;
     margin: 0 auto;
     color: #000000;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -48,6 +50,10 @@
     margin: 0 auto;
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000
+}
+
+.article_img {
+    float: right;
 }
 
 .newTitle
