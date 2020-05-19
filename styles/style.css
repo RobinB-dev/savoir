@@ -7,6 +7,7 @@
 body {
     font-family: 'Fugaz One', cursive;
     margin: 0;
+    background-color: #ffffff;
 }
 
 body::after {
@@ -17,6 +18,7 @@ body::after {
     right: 0;
     bottom: 0;
     left: 0;
+    background-color: #ffffff;
   }
 
 header {
@@ -39,22 +41,25 @@ header nav {
     top: 1%;
     left: 50%;
     transform: translateX(-240%);
+    z-index: 150;
     mix-blend-mode: difference;
 }
 
 .date {
-    position: fixed;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    position: fixed;
+    z-index: 150;
     mix-blend-mode: difference;
+    color: white;
 }
 
 .contact {
     top: 1%;
     left: 50%;
     transform: translateX(180%);
+    z-index: 150;
     mix-blend-mode: difference;
 }
 
