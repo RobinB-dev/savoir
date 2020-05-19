@@ -33,50 +33,90 @@ header {
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    padding: 60px;
+    width: 100%;
+}
+
+.title img{
+    padding-top: 60px;
     width: 600px;
 }
 
-header nav {
-    position: absolute;
+.headerMargin{
+    margin: 0px 100px;
+}
+
+.headerTitleContainer{
     font-size: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.headerTitle1{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+}
+
+.headerTitle2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerTitle3{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    left: 100px;
+}
+.headerTitleCenter{
+    width: 30%;
+    /* background: turquoise; */
+
+}
+
+.contact{
+    margin-top: 10px;
+    z-index: 150;
+    mix-blend-mode: difference;
+}
+
+.header_hover{
+    display: flex;
+    align-content: flex-start;
+    left: 0;
 }
 
 .home {
-    top: 1%;
-    left: 50%;
-    transform: translateX(-240%);
+    margin-top: 10px;
     z-index: 150;
     mix-blend-mode: difference;
 }
 
 .date {
-    top: 1%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10px;
     position: fixed;
     z-index: 150;
     mix-blend-mode: difference;
     color: white;
 }
 
-.contact {
-    top: 1%;
-    left: 50%;
-    transform: translateX(130%);
-    z-index: 150;
-    mix-blend-mode: difference;
-}
 
-.header_hover a {
+
+.headerTitleContainer a {
     position: fixed;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-.header_hover a::after{
+.headerTitleContainer a::after{
     z-index: 2;
     transform-origin: center;
     content: "";
@@ -88,7 +128,7 @@ header nav {
     background-color: white;
 }
 
-.header_hover a:hover::after{
+.headerTitleContainer a:hover::after{
     transform: scaleX(1);
     transition: 0.2s ease-in;
 }
@@ -726,6 +766,9 @@ QUI SOMMES NOUS ?
 }
 
 @media (max-width: 700px) {
+    .title {
+        width: 100%;
+    }
     .case3{
         width: 100%;
     }
