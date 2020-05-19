@@ -54,7 +54,6 @@ header {
     width: 100%;
     justify-content: space-between;
     text-align: center;
-
 }
 
 .headerTitle1{
@@ -780,6 +779,9 @@ QUI SOMMES NOUS ?
 
 
 @media (max-width: 950px) {
+    .headerMargin{
+        margin: 0px 0px;
+    }
     .case1{
         width: 100%;
     }
@@ -801,6 +803,9 @@ QUI SOMMES NOUS ?
     .title {
         width: 100%;
     }
+    .headerTitleContainer{
+        font-size: 16px;
+    }
     .case3{
         width: 100%;
     }
@@ -812,5 +817,14 @@ QUI SOMMES NOUS ?
 @media (max-width: 600px) {
     .containerArticle{
         margin: 0px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        height: 150px;
+    }
+    .headerTitleContainer{
+        font-size: 12px;
     }
 }
