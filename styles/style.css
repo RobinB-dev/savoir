@@ -86,7 +86,7 @@ header nav {
 }
 
 .mouse_invert {
-    z-index: 10;
+    z-index: 2000;
     top: -100px;
     left: -100px;
     pointer-events: none;
