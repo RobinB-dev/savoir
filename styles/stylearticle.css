@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
+body
+{
+    background-color: #efeeee;
+}
+
+.userselect::selection
+{
+    background-color: #707070;
+    color: #ffffff;
+}
+
 .articleContainer
 {
     width: calc(100% - 200px);
