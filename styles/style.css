@@ -141,6 +141,23 @@ ARTICLE
 }
 
 .caseArticle{
+    margin-top: -20px;
+    width: 28%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.caseArticle2{
+    margin-top: -20px;
+    margin-left: 8%;
+    width: 28%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.caseArticle3{
+    margin-top: -20px;
+    margin-left: 8%;
     width: 28%;
     position: relative;
     padding-bottom: 50px;
