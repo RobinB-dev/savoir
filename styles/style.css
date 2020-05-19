@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
+/* * {
+    cursor: none;
+} */
+
 body {
-    background-color: white;
+    background-color: #efeeee;
     font-family: 'Fugaz One', cursive;
     margin: 0;
 }
@@ -69,3 +73,29 @@ header nav {
     transform: scaleX(1);
     transition: 0.2s ease-in;
 }
+
+.mouse_invert {
+    top: -100px;
+    left: -100px;
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+}
+
+/* .mouse_invert::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    top: 80%;
+    left: 80%;
+} */

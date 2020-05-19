@@ -6,7 +6,7 @@ body
     background-color: #efeeee;
 }
 
-.userselect::selection 
+.userselect::selection
 {
     background-color: #707070;
     color: #ffffff;
