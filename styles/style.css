@@ -191,65 +191,80 @@ ARTICLE
 
 .footer
 {
-    height: 150px;
+    height: 250px;
     font-family: 'PT Sans Narrow', sans-serif;
     user-select: none;
+    border-width: 10px;
+    border-style: solid hidden hidden hidden;
 }
 
-.footerInfo
-{
-    width: 190px;
-    margin-top: 40px;
-    line-height: 40px;
-    position: absolute;
+.footer .footerContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin: 0px 100px;
 }
 
-.icon
-{
-    margin-right: 3px;
+
+
+.logoContainer .icon{
+    margin-right: 12px;
 }
 
-.who
-{
-    font-size: 24px;
-}
-
-.copyright
-{
-    width: 500px;
+.footerContainer .who{
     display: flex;
     justify-content: center;
-}
-.savoirLogo
-{
-    width: 180px;
-    height: auto;
-    position: relative;
-    top: 45px;
-    left: 518px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    width: 100%;
 }
 
-.savoirCopyright
-{
-    width: 280px;
-    position: relative;
-    top: 100px;
-    left: 300px;
+.footerContainer .logoContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.p2024
-{
-    position: relative;
-    left: 90px;
+.footerContainer .copyright{
+    width: 300px;
+    /* display: flex; */
+    justify-content: center;
 }
 
-.linkFooter
-{
+.copyright .savoirLogo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    /* width: 250px; */
+}
+
+.copyright .savoirLogo img{
+    width: 250px;
+}
+
+.copyright .savoirCopyright{
+    text-align: center;
+}
+
+.copyright .savoirCopyright .reserve{
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.copyright .savoirCopyright .p2024{
+    width: 100%;
+}
+
+
+.footerContainer .link{
+    height: 97px;
+}
+
+.footerContainer .linkFooter{
     text-decoration: none;
     color: #000000;
     font-size: 24px;
-    position: relative;
-    left: 1000px;
 }
 
 /*************
@@ -257,9 +272,6 @@ ARTICLE
 QUI SOMMES NOUS ?
 
 **************/
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 
 .presLeft
@@ -647,3 +659,9 @@ QUI SOMMES NOUS ?
     font-size: 16px;
     font-family: 'Fugaz One', cursive;
 }
+
+.padding4{
+    padding-bottom: 30px;
+}
+
+/* END INDEX ROBIN */
