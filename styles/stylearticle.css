@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-
-body
-{
-    background-color: #efeeee;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap%27');
 
 .userselect::selection
 {
@@ -52,7 +47,7 @@ body
     font-size: 24px;
     margin: 0 auto;
     border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #000000
 }
 
 .newTitle
@@ -76,6 +71,7 @@ body
 
 .footer
 {
+    z-index: -10;
     height: 150px;
     font-family: 'PT Sans Narrow', sans-serif;
     user-select: none;
