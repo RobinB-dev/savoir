@@ -200,6 +200,7 @@ ARTICLE
     margin: 0 auto;
     color: #000000;
     font-family: 'PT Sans Narrow', sans-serif;
+    margin-bottom: 20px;
 }
 
 .newarticles
@@ -215,6 +216,10 @@ ARTICLE
     border-bottom: 5px solid #000000
 }
 
+.article_img{
+    margin: 10px;
+    float: right;
+}
 .newTitle
 {
     margin-bottom: 10px;
@@ -553,6 +558,16 @@ QUI SOMMES NOUS ?
     padding: 0px 10px;
     top: 0px;
     background: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Fugaz One', cursive;
+}
+.autorA h4{
+    position: relative;
+    margin: 0;
+    padding: 0px 10px;
+    top: 0px;
+    background: #F3F3FF;
     text-align: center;
     font-size: 16px;
     font-family: 'Fugaz One', cursive;
