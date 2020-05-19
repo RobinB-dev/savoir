@@ -58,7 +58,7 @@ header nav {
 .contact {
     top: 1%;
     left: 50%;
-    transform: translateX(180%);
+    transform: translateX(130%);
     z-index: 150;
     mix-blend-mode: difference;
 }
@@ -114,6 +114,11 @@ header nav {
     border-radius: 50%;
     top: 0;
     left: 0;
+}
+
+.click {
+    width: 30px;
+    height: 30px;
 }
 
 

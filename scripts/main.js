@@ -1,8 +1,9 @@
 const date_elem = document.querySelector(".date")
 const pointer_elem = document.querySelector(".mouse_invert")
 const pointer_cursor_elem = document.querySelector(".mouse_invert_cursor")
-let x
-let y
+const clickable_things_elem = document.querySelectorAll("a")
+let x = -50
+let y = -50
 
 const current_date_data = new Date()
 
@@ -20,6 +21,15 @@ const cursor = () => {
         x = e.clientX
         y = e.clientY 
     })
+
+    clickable_things_elem.forEach(element => {
+        element.addEventListener("mouseenter", () => {
+            pointer_elem.classList.add("click")
+        })
+        element.addEventListener("mouseleave", () => {
+            pointer_elem.classList.remove("click")
+        })
+    });
 
     const renderCursor = () => {
         pointer_cursor_elem.style.transform = `translate(${x - 2.5}px, ${y - 2.5}px)`
