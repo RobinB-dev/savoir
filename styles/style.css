@@ -729,3 +729,9 @@ QUI SOMMES NOUS ?
         transform: translateY(50px)
     }
 }
+
+@media (max-width: 600px) {
+    .containerArticle{
+        margin: 0px 20px;
+    }
+}
