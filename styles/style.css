@@ -21,6 +21,12 @@ body::after {
     background-color: #ffffff;
 }
 
+::selection
+{
+    background-color: #707070;
+    color: #ffffff;
+}
+
 header {
     user-select: none;
     height: 205px;
@@ -127,12 +133,6 @@ header nav {
 ARTICLE
 
 ************/
-
-.userselect::selection
-{
-    background-color: #707070;
-    color: #ffffff;
-}
 
 .articleContainer
 {
@@ -325,6 +325,7 @@ QUI SOMMES NOUS ?
     height: 150px;
     margin-top: 10px;
     float: left;
+    user-select: none;
 }
 
 .imgRight
@@ -333,6 +334,7 @@ QUI SOMMES NOUS ?
     height: 150px;
     margin-top: 10px;
     float: right;
+    user-select: none;
 }
 
 .aboutLeft
@@ -350,6 +352,7 @@ QUI SOMMES NOUS ?
     width: 150px;
     background: #000000;
     color: #ffffff;
+    user-select: none;
 }
 
 .descripLeft
@@ -412,6 +415,7 @@ QUI SOMMES NOUS ?
     width: 150px;
     background: #000000;
     color: #ffffff;
+    user-select: none;
 }
 
 .descripRight
