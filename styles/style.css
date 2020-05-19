@@ -99,3 +99,291 @@ header nav {
     top: 80%;
     left: 80%;
 } */
+
+
+/*************
+
+ARTICLE
+
+************/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+body
+{
+    background-color: #efeeee;
+}
+
+.userselect::selection
+{
+    background-color: #707070;
+    color: #ffffff;
+}
+
+.articleContainer
+{
+    width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+.articleinfo
+{
+    color: #000000;
+    font-family: 'Fugaz One', cursive;
+}
+
+.titleArticle
+{
+    font-size: 32px;
+}
+
+.writer
+{
+    font-style: 18px;
+}
+
+.articletext
+{
+    width: 800px;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.newarticles
+{
+    width: 100%;
+    padding-top: 10px;
+    font-family: 'Fugaz One', cursive;
+    background: #F3F3FF;
+    height: 330px;
+    font-size: 24px;
+    margin: 0 auto;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000
+}
+
+.newTitle
+{
+    margin-bottom: 10px;
+}
+
+.newImg
+{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.imgInfo
+{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer
+{
+    height: 150px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    user-select: none;
+}
+
+.footerInfo
+{
+    width: 190px;
+    margin-top: 40px;
+    line-height: 40px;
+    position: absolute;
+}
+
+.icon
+{
+    margin-right: 3px;
+}
+
+.who
+{
+    font-size: 24px;
+}
+
+.copyright
+{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.savoirLogo
+{
+    width: 180px;
+    height: auto;
+    position: relative;
+    top: 45px;
+    left: 518px;
+}
+
+.savoirCopyright
+{
+    width: 280px;
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+
+.p2024
+{
+    position: relative;
+    left: 90px;
+}
+
+.linkFooter
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    position: relative;
+    left: 1000px;
+}
+
+/*************
+
+QUI SOMMES NOUS ?
+
+**************/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+.presLeft
+{
+    font-family: 'Fugaz One', cursive;  
+    margin-bottom: 50px;
+    font-size: 24px;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 200px;
+}
+
+.textLeft
+{
+    font-size: 24px;
+    margin-left: 80px;
+}
+
+.imgLeft
+{
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 10px;
+    float: left;
+}
+
+.imgRight
+{
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 10px;
+    float: right;
+}
+
+.aboutLeft
+{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.roleLeft
+{
+    text-align: center;
+    height: 33px;
+    width: 150px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.descripLeft
+{
+    width: 900px;
+    margin-left: 180px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.descriptionLeft
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
+
+.presRight
+{
+    background: #F3F3FF;
+    font-family: 'Fugaz One', cursive;  
+    font-size: 24px;
+    margin-right: 130px;
+    width: calc(100% - 200px);
+    height: 200px;
+    margin: 0 auto;
+}
+
+.imgRight
+{
+    margin-right: 50px;
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 10px;
+    float: right;
+}
+
+.imgRight
+{
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 10px;
+    float: right;
+}
+
+.aboutRight
+{
+    padding-top: 20px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    flex-direction: row-reverse;
+    margin-top: 15px;
+}
+
+.roleRight
+{
+    text-align: center;
+    height: 33px;
+    width: 150px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.descripRight
+{
+    margin-left: 100px;
+    width: 900px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.descriptionRight
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
+
+.container
+{
+    width: 100%;
+    background: #F3F3FF;
+}
