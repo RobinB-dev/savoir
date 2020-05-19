@@ -5,14 +5,68 @@ const clickable_things_elem = document.querySelectorAll("a")
 let x = -50
 let y = -50
 
+let monthTable = [
+    {
+      monthNb: '1',
+      monthName: 'Janvier'
+    },
+    {
+    monthNb: '2',
+    monthName: 'Fevrier'
+    },
+    {
+      monthNb: '3',
+      monthName: 'Mars'
+    },
+    {
+    monthNb: '4',
+    monthName: 'Avril'
+    },
+    {
+      monthNb: '5',
+      monthName: 'Mai'
+    },
+    {
+    monthNb: '6',
+    monthName: 'Juin'
+    },
+    {
+      monthNb: '7',
+      monthName: 'Juillet'
+    },
+    {
+    monthNb: '8',
+    monthName: 'Aout'
+    },
+    {
+      monthNb: '9',
+      monthName: 'Septembre'
+    },
+    {
+    monthNb: '10',
+    monthName: 'Octobre'
+    },
+    {
+      monthNb: '11',
+      monthName: 'Novembre'
+    },
+    {
+    monthNb: '12',
+    monthName: 'Decembre'
+    }
+]
+
+
 const current_date_data = new Date()
 
 function getDateString() {
     let month = current_date_data.getMonth() + 1
+    const searchMonth = monthTable.find(search => search.monthNb == month ).monthName
+
     let day = current_date_data.getDate()
     let year = current_date_data.getFullYear()
-    return `${day <= 9 ? '0' + day : day}/
-            ${month <= 9 ? '0' + month : month}/
+    return `${day <= 9 ? '0' + day : day}
+            ${searchMonth <= 9 ? '0' + searchMonth : searchMonth}
             ${year}`
 }
 
@@ -44,3 +98,4 @@ const cursor = () => {
 cursor()
 
 date_elem.textContent = getDateString()
+
