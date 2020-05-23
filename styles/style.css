@@ -174,6 +174,48 @@ ARTICLE
 
 ************/
 
+.picFilter img{
+    -webkit-animation: filterOut 0.8s normal ;
+    -webkit-filter:  grayscale(0);
+    transition: all 0.8s ease;
+}
+
+.picFilter:hover img{
+    -webkit-animation: filterIn 5s normal ;
+    -webkit-filter:  grayscale(1);
+    transform: scale(1.1);
+    transition: all 5.0s ease;
+}
+
+
+.picFilter h3{
+    color: #ffffff;
+    overflow: hidden;
+    background: linear-gradient(to right, #ffffff 40%, #ffffff9a, #ffffff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 0ms ease;
+    text-decoration: none; 
+}
+
+.picFilter:hover h3{
+    transition: background-position 1000ms ease;
+    background-position: 0 100%;
+}
+  
+@-webkit-keyframes filterIn {
+    0% { -webkit-filter: grayscale(0);}
+    100% { -webkit-filter: grayscale(1);}
+}
+
+@-webkit-keyframes filterOut {
+    0% { -webkit-filter: grayscale(1);}
+    100% { -webkit-filter: grayscale(0);}
+}
+
 .articleContainer
 {
     width: calc(100% - 200px);
@@ -528,7 +570,7 @@ QUI SOMMES NOUS ?
     background: #F3F3FF;
 }
 /* ------------- */
-/* HOME PAGE ROBIN*/
+/* HOME PAGE */
 /* ------------- */
 
 
@@ -582,7 +624,13 @@ QUI SOMMES NOUS ?
     padding-bottom: 50px;
 }
 
-.case1 img {
+.case1 .imgOverflow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.case1 .imgOverflow img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -591,6 +639,7 @@ QUI SOMMES NOUS ?
 .titleCase1{
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .titleCase1 h3{
@@ -652,12 +701,17 @@ QUI SOMMES NOUS ?
     position: relative;
 }
 
-.case2 img {
+.case2 .imgOverflow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.case2 .imgOverflow img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 
 .titleCase2{
     width: 100%;
@@ -711,7 +765,13 @@ QUI SOMMES NOUS ?
     padding-bottom: 50px;
 }
 
-.case3 img {
+.case3 .imgOverflow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.case3 .imgOverflow img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -761,7 +821,13 @@ QUI SOMMES NOUS ?
     padding-bottom: 20px;
 }
 
-.case4 img {
+.case4 .imgOverflow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.case4 .imgOverflow img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -803,11 +869,14 @@ QUI SOMMES NOUS ?
     padding-bottom: 30px;
 }
 
-/* END INDEX ROBIN */
+/* END INDEX */
 
 
 
 @media (max-width: 950px) {
+    .titleCase4 h3{
+        font-size: 24px;
+    }
     .headerMargin{
         margin: 0px 0px;
     }
@@ -898,6 +967,9 @@ QUI SOMMES NOUS ?
     .containerArticle{
         margin: 0px 20px;
     }
+    .titleCase1 h3{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -905,6 +977,18 @@ QUI SOMMES NOUS ?
         height: 150px;
     }
     .headerTitleContainer{
+        font-size: 12px;
+    }
+    .titleCase1 h3{
+        font-size: 24px;
+    }
+    .titleCase2 h3{
+        font-size: 32px;
+    }
+    .titleCase4 h3{
+        font-size: 16px;
+    }
+    .autor4 h4{
         font-size: 12px;
     }
 }
