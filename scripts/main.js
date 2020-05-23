@@ -1,7 +1,7 @@
 const date_elem = document.querySelector(".date")
 const pointer_elem = document.querySelector(".mouse_invert")
 const pointer_cursor_elem = document.querySelector(".mouse_invert_cursor")
-const clickable_things_elem = document.querySelectorAll("a")
+const clickable_things_elem = document.querySelectorAll(".clickable")
 let x = -50
 let y = -50
 
