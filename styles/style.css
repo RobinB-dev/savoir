@@ -177,14 +177,14 @@ ARTICLE
 ************/
 
 .picFilter img{
-    -webkit-animation: filterOut 0.8s normal ;
-    -webkit-filter:  grayscale(0);
+    animation: filterOut 0.8s normal ;
+    filter:  grayscale(0);
     transition: all 0.8s ease;
 }
 
 .picFilter:hover img{
-    -webkit-animation: filterIn 5s normal ;
-    -webkit-filter:  grayscale(1);
+    animation: filterIn 5s normal ;
+    filter:  grayscale(1);
     transform: scale(1.1);
     transition: all 5.0s ease;
 }
@@ -208,12 +208,12 @@ ARTICLE
     background-position: 0 100%;
 }
   
-@-webkit-keyframes filterIn {
+@keyframes filterIn {
     0% { -webkit-filter: grayscale(0);}
     100% { -webkit-filter: grayscale(1);}
 }
 
-@-webkit-keyframes filterOut {
+@keyframes filterOut {
     0% { -webkit-filter: grayscale(1);}
     100% { -webkit-filter: grayscale(0);}
 }
@@ -975,6 +975,15 @@ QUI SOMMES NOUS ?
 }
 
 @media (max-width: 450px) {
+    * {
+        cursor: auto;
+    }
+    .mouse_invert{
+        display: none;
+    }
+    .mouse_invert_cursor{
+        display: none;
+    }
     header {
         height: 150px;
     }
