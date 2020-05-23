@@ -214,7 +214,7 @@ ARTICLE
 }
 
 @keyframes filterOut {
-    0% { -webkit-filter: grayscale(1);}
+    /* 0% { -webkit-filter: grayscale(1);} */
     100% { -webkit-filter: grayscale(0);}
 }
 
