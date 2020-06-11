@@ -611,6 +611,10 @@ QUI SOMMES NOUS ?
     background: #F3F3FF;
 }
 
+p
+{
+    font-size: 20px;
+}
 /* ARTICLE 1 */
 
 .containerArticle{
