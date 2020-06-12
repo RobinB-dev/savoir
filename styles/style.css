@@ -296,7 +296,7 @@ ARTICLE
 
 .articletext
 {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     color: #000000;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -321,6 +321,7 @@ ARTICLE
     float: right;
     width: 450px;
 }
+
 .newTitle
 {
     margin-bottom: 10px;
@@ -935,10 +936,19 @@ p
     .footerContainer .whoContainer{
         justify-content: left;
     }
+    .articleContainer{
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    }
 }
 
 @media (max-width: 800px) {
     .case4{
+        width: 100%;
+    }
+    .article_img{
+        margin: 0;
+        float: right;
         width: 100%;
     }
 }
