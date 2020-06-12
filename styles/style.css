@@ -285,8 +285,7 @@ ARTICLE
     font-family: 'Fugaz One', cursive;
 }
 
-.titleArticle
-{
+.titleArticle{
     font-size: 32px;
 }
 
@@ -1040,6 +1039,11 @@ p
     }
     .articletext > *{
     font-size: 16px;
+    }
+    .titleCaseArticle h3{
+        margin: 0;
+        margin-bottom: 160px;
+        font-size: 16px;
     }
 }
 
