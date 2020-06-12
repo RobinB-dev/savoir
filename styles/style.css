@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 * {
     cursor: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
 }
 
 body {
@@ -32,6 +38,11 @@ header {
     height: 205px;
 }
 
+.headerArticle {
+    user-select: none;
+    height: 140px;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -39,9 +50,15 @@ header {
     width: 100%;
 }
 
+
 .title img{
     padding-top: 60px;
     width: 600px;
+}
+
+.headerArticle img{
+    padding-top: 60px;
+    width: 300px;
 }
 
 .headerMargin{
@@ -268,8 +285,7 @@ ARTICLE
     font-family: 'Fugaz One', cursive;
 }
 
-.titleArticle
-{
+.titleArticle{
     font-size: 32px;
 }
 
@@ -280,11 +296,16 @@ ARTICLE
 
 .articletext
 {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     color: #000000;
     font-family: 'PT Sans Narrow', sans-serif;
     margin-bottom: 20px;
+}
+
+.articletext > *
+{
+    font-size: 18px;
 }
 
 .newarticles
@@ -305,9 +326,16 @@ ARTICLE
     float: right;
     width: 450px;
 }
+
 .newTitle
 {
     margin-bottom: 10px;
+}
+
+.centerVid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .newImg
@@ -315,6 +343,11 @@ ARTICLE
     display: flex;
     justify-content: space-between;
     user-select: none;
+}
+
+.newImg img
+{
+    width: 30%;
 }
 
 .imgInfo
@@ -722,6 +755,7 @@ p
     width: 100%;
     height: 100%;
     overflow: hidden;
+    filter: grayscale(10%) opacity(0.8);
 }
 
 .case2 .imgOverflow img {
@@ -912,10 +946,19 @@ p
     .footerContainer .whoContainer{
         justify-content: left;
     }
+    .articleContainer{
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    }
 }
 
 @media (max-width: 800px) {
     .case4{
+        width: 100%;
+    }
+    .article_img{
+        margin: 0;
+        float: right;
         width: 100%;
     }
 }
@@ -987,6 +1030,21 @@ p
     .titleCase1 h3{
         font-size: 24px;
     }
+    .articleContainer{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .titleArticle{
+    font-size: 24px;
+    }
+    .articletext > *{
+    font-size: 16px;
+    }
+    .titleCaseArticle h3{
+        margin: 0;
+        margin-bottom: 160px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1016,5 +1074,11 @@ p
     }
     .autor4 h4{
         font-size: 12px;
+    }
+    .titleArticle{
+        font-size: 18px;
+    }
+    .articletext > *{
+    font-size: 14px;
     }
 }
