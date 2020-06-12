@@ -343,6 +343,7 @@ ARTICLE
     display: flex;
     justify-content: space-between;
     user-select: none;
+    overflow: hidden;
 }
 
 .newImg img
@@ -755,7 +756,7 @@ p
     width: 100%;
     height: 100%;
     overflow: hidden;
-    filter: grayscale(10%) opacity(0.8);
+    /* filter: grayscale(10%) opacity(0.8); */
 }
 
 .case2 .imgOverflow img {
