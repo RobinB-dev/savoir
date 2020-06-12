@@ -314,7 +314,7 @@ ARTICLE
     padding-top: 10px;
     font-family: 'Fugaz One', cursive;
     background: #F3F3FF;
-    height: 330px;
+    height: 350px;
     font-size: 24px;
     margin: 0 auto;
     border-top: 5px solid #000000;
@@ -772,7 +772,7 @@ p
 }
 
 .titleCase2 h3{
-    color: #ffffff;
+    color: red;
     text-align: center;
     /* margin: 60px; */
     margin-bottom: 50px;
