@@ -270,7 +270,7 @@ ARTICLE
 
 .articleContainer
 {
-    max-width: 800px;
+    width: calc(100% - 200px);
     margin: 0 auto;
 }
 
