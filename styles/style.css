@@ -247,8 +247,7 @@ ARTICLE
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     /* width: 100%; */
     height: 800px;
     overflow: hidden;
